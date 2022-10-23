@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="assests/style.css">
+    <script src="https://kit.fontawesome.com/80124a872c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- --------------- HEADER --------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Sahil</span> Khatri</h1>                 
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------- ABOUT --------------- -->
+    <div id="about"> 
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Computer Engineering student at Ajeenkya Dy Patil University. I would be graduating in the following year, I am eager to
+                        secure challenging roles in and excelling at them the very same. My studies have provided me with broad proficiency in the use of
+                        computer engineering methods, tools, software packages and techniques.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br></li>
+                            <li><span>C++</span><br></li>
+                            <li><span>SQL</span><br></li>
+                            <li><span>OOPS</span><br></li>
+                            <li><span>Android Dev.</span><br></li>
+                            <li><span>HTML</span><br></li>
+                            <li><span>CSS</span><br></li>
+                            <li><span>JavaScript</span><br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>Web Developer - Intern At Raibhilo Consultancy</li>        
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>Computer Science Engineering<br>Ajeenkya DY Patil University, Pune<br>CGPA - 8.54</li>
+                            <br>
+                            <li><span>2017 - 2019</span><br>HSC<br>Adarsh Jr.College, Akola<br>Percentage - 61.54%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- --------------- SERVICES --------------- -->
+   <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designers plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips. A web designer is responsible for creating the design and layout of a website or web pages. It and can mean working on a brand new website or updating an already existing site.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Software Developer</h2>
+                    <p>Develop applications that make it possible for people to perform specific tasks on computers, cellphones, or other devices.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Designing mobile apps according to your specific choices and business needs. We combine the power of Kotlin and customization to create flawless apps.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <!-- --------------- PORTFOLIO --------------- -->
+   <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Covid Tracker App</h3>
+                        <p>Users can search for all countries data through the search bar & can also get Vaccinations centre details by entering the pin-code
+                            & he can check the vaccine availability from Application</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-virus-covid"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects ypu to media all across the world</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>    
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you which allows consumers to directly buy goods or services from a seller over the Internet using mobile app</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a> 
+        </div>
+    </div>
+    
+   </div>
+
+   <!-- --------------- CONTACT --------------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>7sahilkhatri@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9405136891</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Sahilkhatri07"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/sahilkhatri_3"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/sahil_mahesh_khatri/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sahilkhatri0307/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © <i class="fa-sharp fa-solid fa-heart"></i> Sahil.</p>
+    </div>
+   </div>
+
+   
+   <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
